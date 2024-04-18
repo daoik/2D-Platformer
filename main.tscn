@@ -509,7 +509,7 @@ position = Vector2(1501, 245)
 position = Vector2(2262, 485)
 
 [node name="Collectible7" parent="." instance=ExtResource("5_q1cn3")]
-position = Vector2(2210, 418)
+position = Vector2(2216, 421)
 
 [node name="Collectible8" parent="." instance=ExtResource("5_q1cn3")]
 position = Vector2(2315, 423)
