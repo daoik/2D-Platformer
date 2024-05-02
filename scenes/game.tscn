@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://ch0g3coe7l0du"]
+[gd_scene load_steps=13 format=3 uid="uid://ch0g3coe7l0du"]
 
 [ext_resource type="PackedScene" uid="uid://w0suaw0xehat" path="res://scenes/player.tscn" id="1_xkau5"]
 [ext_resource type="Texture2D" uid="uid://bxbblio21fe0a" path="res://assets/sprites/world_tileset.png" id="2_qmdm6"]
 [ext_resource type="PackedScene" uid="uid://ifl4lmmvbic0" path="res://scenes/platform.tscn" id="3_jymgp"]
 [ext_resource type="PackedScene" uid="uid://b0oxcnoptj0sr" path="res://scenes/coin.tscn" id="4_wwsus"]
 [ext_resource type="PackedScene" uid="uid://gfy4dux6dhxi" path="res://scenes/killzone.tscn" id="5_rwv14"]
+[ext_resource type="PackedScene" uid="uid://blnsnwavltgnv" path="res://scenes/slime.tscn" id="6_yb4i2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yo5jb"]
 texture = ExtResource("2_qmdm6")
@@ -458,7 +459,7 @@ layer_1/tile_data = PackedInt32Array(1048593, 0, 0, 1048594, 0, 0, 1048596, 0, 0
 
 [node name="Player" parent="." instance=ExtResource("1_xkau5")]
 z_index = 10
-position = Vector2(264, 245)
+position = Vector2(216, 255)
 collision_layer = 2
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -492,3 +493,6 @@ position = Vector2(239, 304)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(72, 0)
 shape = SubResource("WorldBoundaryShape2D_2t5nt")
+
+[node name="Slime" parent="." instance=ExtResource("6_yb4i2")]
+position = Vector2(741, 166)
