@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="2D Platformer"
-run/main_scene="res://game.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://test/icon.svg"
 
@@ -51,12 +51,7 @@ jump={
 ]
 }
 
-[physics]
-
-2d/default_gravity=2500.0
-
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
-environment/defaults/default_clear_color=Color(0, 0, 0, 1)
